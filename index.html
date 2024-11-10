@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages で jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery の CDN -->
+</head>
+<body>
+    <h1>GitHub Pages で jQuery を使う</h1>
+    <button id="changeText">クリックしてテキストを変更</button>
+    <p id="message">ここにテキストが表示されます。</p>
+
+    <script>
+        $(document).ready(function() {
+            $('#changeText').click(function() {
+                $('#message').text('テキストが変更されました！');
+            });
+        });
+    </script>
+</body>
+</html>
